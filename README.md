@@ -1,30 +1,17 @@
-# cc_api
 
-API de circulo de credito
 
 # Comandos
 
-## Crear usuario
+## Instalar paquetes
 
-\$ python manage.py create_user -u juan -e juan@gmail.com -p 123456789 -r admin
+\$ npm i
 
-opción r es rol y puede ser admin u omitirse
 
-## Productos de círculo de crédito
+## Correr proyecto
 
-\$ python manage.py common_products
+\$ npm run develop
 
-# Ejecución
 
-## Ambiente local
 
-\$ python -menv env
-\$ source env/bin/activate
-\$ pip install -r requirements.txt
-\$ python manage.py migrate
-\$ python manage.py runserver
 
-# Playground de graphql
-
-http://localhost:8000/graphql/user
 
