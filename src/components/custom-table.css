@@ -1,0 +1,10 @@
+.MuiTableBody-root tr:nth-child(odd){
+  background: #898989;
+}
+.MuiTableBody-root tr:nth-child(odd):hover,
+.MuiTableBody-root tr:nth-child(even):hover{
+  background: rgba(137,137,137, 0.5) !important;  
+}
+.MuiTableBody-root tr:nth-child(even){
+  background: white !important;  
+}
