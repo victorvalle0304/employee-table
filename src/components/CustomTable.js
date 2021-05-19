@@ -17,6 +17,7 @@ const columns = [
   {
     title: "Company",
     field: "company",
+    editable: "never"
   },
   {
     title: "Salary",
@@ -45,7 +46,7 @@ export default function CustomTable() {
   const [checked, setChecked] = useState(true);    
   const [data, setData] = useState(
     [
-      { id: 1, name: "Employee 1", company: "C1", salary: 20000 },
+      { id: 1, name: "Employee 1", company: "C1", salary: 9800 },
       { id: 2, name: "Employee 2", company: "C2", salary: 20000 },
       { id: 3, name: "Employee 3", company: "C3", salary: 20000 },
       { id: 4, name: "Employee 3", company: "C4", salary: 15000 },
@@ -100,7 +101,7 @@ export default function CustomTable() {
         ]}
         options={tableOptions}
         editable={{
-            // isEditable: rowData => rowData.name === 'a', // only name(a) rows would be editable
+          // isEditable: rowData => rowData.name === 'a', // only name(a) rows would be editable
           //isEditHidden: rowData => rowData.name === 'x',
           //isDeletable: rowData => rowData.name === 'b', // only name(b) rows would be deletable,
           //isDeleteHidden: rowData => rowData.name === 'y',          
